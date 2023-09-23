@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jutils"
+authors = [
+    {name = "Ziqin Gong", email = "gongzq0301@gmail.com"}
+]
+description = "Provide convenient JAX usage for personal purposes."
+requires-python = ">=3.9"
+dependencies = [
+    "jax",
+    "chex",
+    'importlib-metadata; python_version<"3.8"',
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.dynamic]
+version = {attr = "jutils.__version__"}

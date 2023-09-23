@@ -5,3 +5,5 @@ from .operators import flatten, matinv, bop, bdot, bmm, norm, sum_of_square
 import jax
 from jax import jit, vmap, random
 from jax import numpy as np
+
+__version__ = "0.1.0"
