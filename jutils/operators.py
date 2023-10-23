@@ -1,14 +1,10 @@
 from .types import Array
+from .utils import flatten
 
 from functools import partial
 from jax import jit
 from jax import numpy as np
 from typing import Optional, Union, Sequence
-
-
-@partial(jit, static_argnames=("axis",))
-def flatten(x: Array, axis: int = -1) -> Array:
-  return x.reshape(-1, *x.shape[axis:])
 
 
 @jit

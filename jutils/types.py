@@ -3,6 +3,7 @@ from flax.core.frozen_dict import FrozenDict
 from typing import Callable, Any, Dict, Tuple, Union
 
 Array = chex.Array
+Scalar = chex.Scalar
 PRNGKey = chex.PRNGKey
 DType = chex.ArrayDType
 Shape = chex.Shape

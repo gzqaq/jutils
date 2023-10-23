@@ -1,6 +1,7 @@
 from .types import Array, PRNGKey, DType, Shape, VariableDict, DataDict, Initializer, ApplyFunction
 from .random import default_rng, split_rng, rng_wrapper
-from .operators import flatten, matinv, bop, bdot, bmm, norm, sum_of_square
+from .operators import matinv, bop, bdot, bmm, norm, sum_of_square
+from .utils import flatten, tile_over_axis, type2dtype, scalar2jax, make_supervised_train, concat, cbind
 
 import jax
 from jax import lax, jit, vmap, random
