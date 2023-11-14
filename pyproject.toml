@@ -1,15 +1,14 @@
 [tool.poetry]
 name = "jutils"
-version = "0.1.0"
+version = "0.1.1"
 description = "Provide convenient JAX usage for personal purposes."
 authors = ["Ziqin Gong <gongzq0301@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = ">=3.9"
+python = ">=3.8"
 jax = ">=0.4.11"
 chex = ">=0.1.7"
-flax = ">=0.7.2"
 
 
 [build-system]

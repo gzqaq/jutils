@@ -21,7 +21,7 @@ def tile_over_axis(a: Array, size: int, axis: int = 0) -> Array:
 @jit
 def concat(*args) -> Array:
   """Flatten all ndarrays and concatenate them. Like c() in R."""
-  return np.concatenate(args, axis=None)
+  return np.concatenate(tree_map(lambda x: np.array(x).flatten(), args))
 
 
 @jit
